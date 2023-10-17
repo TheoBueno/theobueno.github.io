@@ -9,14 +9,14 @@
 }
 a{
   font-family: 'Rokkitt', serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-stretch: expanded;
 }
 nav {
   position: absolute;
   width: 100%;
   display: flex;
-  padding: 3rem 10rem; /* padding adds a buffer space around the content; */
+  padding: 43px 165px;  /* padding adds a buffer space around the content; */
   justify-content: space-between; /* splits the content left/right with space in between */
   z-index: 40;
   /* background-color: aqua;  */ /* to visualize area; */
@@ -43,7 +43,7 @@ nav {
   position: absolute;
   top: 35%;    /* bring it a litle up from center; */
   left: 50%;
-  font-size: 6rem;
+  font-size: 100px;
   transform: translate(-50%, -30%); /* correction for true center; a little up from center /left/top/ instead of starting leftmost margin on center*/ 
   z-index: 2;
 
@@ -66,8 +66,8 @@ nav {
 }
 
 .text {
-  padding: 2rem 20rem;
-  font-size: 1.1rem;
+  padding: 35px 350px;
+  font-size: 17px;
 }
 
 .mid-card{
@@ -121,6 +121,6 @@ footer{
   padding: 0px;
   /* margin-left: 20px; */
   margin-bottom: 20px;
-  font-size: 0.75rem;
+  font-size: 12px;
   color: aqua;
 }
