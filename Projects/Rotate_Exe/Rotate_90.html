@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate Square Matrix 90°</title>
+  <style>
+    .grid {
+      display: grid;
+      padding-top: 10px;
+      grid-template-columns: repeat(5, 80px);
+      grid-template-rows: repeat(5, 80px);
+      grid-gap: 15px;
+    }
+    div{
+        padding: 10px;
+        text-align: center;
+        border-style: solid;
+        font-size: 1em;
+    }
+    .box {
+      background-color: #619465;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+    .button {
+      font-size: 1.5em;
+    }
+    div:nth-child(even) {
+    background-color: rgb(116, 127, 142);
+    }
+
+  </style>
+</head>
+<body>
+<script src="./Rotate_90.js"></script>
+
+<!-- <button class="button" onclick="createGrid(A)">New Grid!</button> -->
+<button class="button" onclick='diagonalFlip(A)'>Diagonal Flip!</button>
+<button class="button" onclick='horizontalFlip(A)'>Horizontal Flip!</button>
+<!-- <button class="button" onclick="updateGraphics(A)">Update Graphics!</button> -->
+
+<main id="grid" class="grid">
+
+</main>
+
+<script>
+var grid = document.getElementById(grid)
+function createGrid(A) {
+  let L = A.length
+  for (let row = 0; row < L; row++) {
+    for (let col = 0; col < L; col++) {
+      
+      let div = document.createElement('div')   
+      div.id = `box ${row}_${col}`
+      div.innerHTML = `${A[row][col]}`
+      div.className = `box ${div.innerHTML}`
+      document.getElementById('grid').appendChild(div)
+    }
+  }
+}
+createGrid(A)
+
+function updateGraphics(A) {
+  let L = A.length
+  for (let row = 0; row < L; row++) {
+    for (let col = 0; col < L; col++) {  
+      let iH = (`${A[row][col]}`)
+      let iD = `box ${row}_${col}`
+      document.getElementById(`${iD}`).innerHTML = `${iH}` // .value?
+    }
+  }
+}
+
+function diagonalFlip(A) {
+  transpose(A)
+  updateGraphics(A)
+}
+
+function horizontalFlip(A) {
+  exchangeCols(A)
+  updateGraphics(A)
+}
+
+</script>
+
+</body>
+</html>

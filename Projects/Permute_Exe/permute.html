@@ -1,0 +1,113 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="title">Permute...ing</h1>
+        <script src="./permute.js"></script>
+        <style>
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-template-rows: repeat(1, 60px);
+            grid-gap: 10px;
+          }
+          .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+          }
+          .button {
+            padding: 3px;
+            margin-bottom: 7px;
+            margin-left: 5px;
+            font-weight: bold;
+            border-width: 1.5px;
+          }
+          #todo {
+            font-size: 1.1em;
+            font-family: 'Courier New', Courier, monospace;
+          }
+          #title {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            color: rgb(62, 39, 162);
+          }
+        
+
+        </style>
+        <button onclick="step()" class="button">Step</button>
+        <button onclick="run()" class="button">Run</button>
+        <button onclick="startOver(step)" class="button">Start Over</button>
+
+        <div id="grid" class="grid">
+          <div class="box 1">a</div>
+          <div class="box 2">b</div>
+          <div class="box 3">c</div>
+          <div class="box 4">d</div>
+          <div class="box 5">e</div>
+          <div class="box 6">f</div>
+          <div class="box 7">g</div>
+          <div class="box 8">h</div>
+        </div>
+
+        <p id="todo">TO DO: Consider creating code to turn letters <br>
+        into an input, automating the creation of divs <br>
+        for each character of the 'string' imputed and <br>
+        populating them</p>
+        
+        <script>
+          const A = "abcdefgh"; //abcdefgh normal or abc for testing
+          const mlen = 3; // matrix length
+          let icount = 0;
+          const permuations = [];
+          const tagArray = [];
+          let tag = document.getElementsByClassName("box");
+          let len = tag.length;
+          for (let i = 0; i < len; i++) {
+            tagArray[i] = tag.item(i); // get a handle on divs
+            console.log(tag.item(i).innerText);
+          }
+      
+          function setTags(Perm) {
+            if (Perm === undefined) {
+                console.log("You must be tired, you've overshot your run.")
+                icount = 0
+                return
+            } else {
+                for (let i = 0; i < len; i++) {
+                tag[i].innerHTML = `${Perm[i]}`;                
+            }
+            }
+          }
+
+        function step() {
+            if (icount === permutations.length){
+                return
+            } else {
+            setTags(permutations[icount++]);
+          }}
+        
+        function run() {
+            setTimeout(() => {
+                if (icount === permutations.length){
+                    return
+                } else {
+                    for (let i = 0; i < permutations.length; i++) {
+                        setTags(permutations[icount++])
+                    }
+                } 
+            run()}, 200);            
+        }
+
+        function startOver(step) {
+            icount = 0
+            step()
+        }
+
+        const permutations = permute(A);
+        
+        </script>
+    </body>
+</html>

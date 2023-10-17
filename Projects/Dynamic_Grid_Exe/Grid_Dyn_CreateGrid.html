@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Customization of a Grid</title>
+    <style>
+        .on {
+            background: orange;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 5px;
+        }
+        div{
+            padding: 10px;
+            text-align: center;
+            border-style: solid;
+            font-size: 1em;
+        }
+           
+    </style>
+</head>
+<body>
+    <h1 id="n0">Dynamic Creation of a Custom Grid</h1>
+    <button onclick="createGrid()" id="btn_createGrid">CREATE GRID</button>
+    <button onclick="move()" style="margin-bottom: 10px;" id="btn_move">MOVE THROUGH GRID</button>
+       
+    <main class="content" id="target">
+    <script>
+    function createGrid() {
+        for (let i = 1; i < 101; i++) {
+            let iDiv = document.createElement('div')
+            iDiv.id = `n${i}`
+            iDiv.innerHTML = `${i}`
+            document.getElementsByTagName('main')[0].appendChild(iDiv)
+        } 
+    }
+    function move() { 
+        (function myLoop(i) {
+            setTimeout(function() {
+                const element1 = document.getElementById(`n${i}`)
+                element1.classList.add('on') 
+                const element2 = document.getElementById(`n${i-1}`)
+                element2.classList.remove('on') 
+                if (++i < 101) myLoop(i);
+            }, 100)
+        })(1);
+    }
+    </script>
+</body>
+</html>
+
+
