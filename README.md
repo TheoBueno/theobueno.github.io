@@ -20,3 +20,5 @@ I found an interesting picture online from a free image resource website, broke 
 ## What did you have in mind?
 
 Using a Parallax as a "Hero" is an interesting visual opening for a page, so I wanted to make use of that visual to show a more modern approach to web design. I then decided to provide the user with a branching pathway, therefore the options to either go directly to the coding exercises I did or to a Bio section.
+
+I also enjoyed making a small visual effect of the "Find out More" opening line to be coming out of the fog from the mountains
