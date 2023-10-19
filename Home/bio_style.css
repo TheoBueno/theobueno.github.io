@@ -1,11 +1,124 @@
-body{
-    background-image: url('https://imgur.com/Fyq5rLJ');
+/* Notes were added to easy any "future me" alterations*/
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif; /* good 'Internet' look in general */
 }
 
-h1{
-    background: rgb(142, 61, 142);
+body {
+	font: normal 16px/1.5 'Poppins', sans-serif; /* good 'Internet' look */
+	background: #187795;
+	color: #fff;
+	overflow-x: hidden;
+	padding-bottom: 50px;
 }
 
-#bioPic{
-    width: 200px;
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1 {
+	background: rgb(142, 61, 142);
+}
+
+#bioPic {
+	width: 200px;
+}
+
+/* ACCORDION SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    /*  margin: 0;          */
+    /*  height: 100vh;      */
+}
+
+.choice{
+    height: 180px;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    align-items: center;
+    transition: width 0.2s;
+    /*    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);        */
+    border-radius:0px;                                         /*Add to make corners round*/
+}
+.expand{
+    width: 65%;
+}
+.unset{
+    width: 16%;
+    color: rgb(255, 255, 255) !important;
+    background-color: #615f5f !important;
+}
+.small{
+    width: 5%;
+    background-color: #615f5f !important; /*changes colour when shrunk*/
+}
+
+/*opacity of text inside Acc Cards -> when another is open >> instead of dividing Title / Text bellow:
+.small>div{
+    opacity: 0;         
+}*/
+
+.card-title {
+    width: fit-content;
+    white-space: nowrap;
+}
+  
+.card-title:before {
+    font-weight: 400;
+    /* content: "\f15b"; */
+    margin-right: 5px;
+
+}
+
+.card-body, .card-title {
+    width: 100%;
+    /* padding: 0; */
+}
+
+.small .card-title {    /*orientation of TITLE of card -> when another is open*/
+    transform-origin: 10px 10px;
+    transform: rotate(90deg);
+    padding: 5px;
+}
+
+.small .card-text {     /*opacity of text inside Acc Cards -> when another is open*/
+    opacity: 0; 
+}
+
+.unset > div > p{ 
+    opacity: 0;         /*opacity of text inside Acc Cards -> when all are closed*/
+}
+.expand > div {
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+/* FINE TUNE SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
 }

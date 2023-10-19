@@ -2,80 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Freelance Full Stack Developer">
+  <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theo's Bio</title>
+  <title>Theo's Coding Lab: The Bio</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- bootstrap CSS library --> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Rokkitt&display=swap" rel="stylesheet"> <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet"/> <!-- Google fonts -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- bootstrap CSS library --> 
 
   <link rel="stylesheet" href="./bio_style.css"> <!-- our css --> 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
-  
-
-  <script src="./bio_script.js"></script> <!-- our js TODO: maybe move to end of body -->   
 </head>
 <body> 
 
- <!--Navigation bar--> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
-<nav class="navbar navbar-expand-lg bg-light">
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Theo's Coding Lab 
+    <a class="navbar-brand" href="../index.html">
+      <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
+      Theo's Coding Lab
+    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="../index.html">Lab's Door</a>
-        <a class="nav-link active" aria-current="page" href="./lifeline_page.html">Lifeline</a>
-        <a class="nav-link" href="./bio_page.html">Bio</a>
-        <a class="nav-link" href="#">The Lab</a>
+        <a class="nav-link disabled" href="#">Lab's Door</a>
+        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
+        <a class="nav-link active" href="./bio_page.html">Bio</a>
+        <a class="nav-link disabled" href="#">The Lab</a>
+        <a class="nav-link disabled" href="#">Created Assets</a>  
+        <a class="nav-link disabled" href="#">Contact</a>          
       </div>
     </div>
   </div>
 </nav>
-<!--end of Navigation bar-->  
-<h1>Theo's Portfolio:</h1>
+<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
+
+  
+<!-- <h1>Theo's Portfolio:</h1> -->
+
 
 
 <!--Accordion--> <!--TODO: EVERYTHING NEEDS A UPDATE HERE // more at https://getbootstrap.com/docs/5.2/components/accordion/-->   
-<div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+<div class="container horizontal-accordion">
+
+  <div class="card choice unset bg-dark text-white mx-2" class="">
+    <div class="card-body">
+      <h5 class="card-title">About</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Card 2</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Card 3</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
+    </div>
+  </div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Card 4</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
+    </div>
+  </div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Card 5</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
+    </div>
+  </div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Card 6</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
 </div>
 <!--End of Accordion--> 
 
 <!--Start of Cards-->  <!--TODO: Rethink this area. // more at https://getbootstrap.com/docs/5.3/components/cards/-->   
-<div class="card">
+
+<!-- <div class="card">
   <div class="card-header">
     Featured
   </div>
@@ -84,13 +117,13 @@
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-</div>
+</div> -->
 
 <div class="container"> <!--TODO: explore cars uses. -->
   <div class="row"> 
     <div class="col-lg-6 mb-4"> 
       <div class="card" style="width: 18rem;">
-        <img src="./ADottaLisa.png" class="card-img-top" alt="...">
+        <img src="../Image_Assets/ADottaLisa.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,7 +133,7 @@
     </div> 
     <div class="col-lg-6 mb-4">          
       <div class="card" style="width: 18rem;">
-        <img src="AMontagem_SP.png" class="card-img-top" alt="...">
+        <img src="../Image_Assets/AMontagem_SP.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -113,8 +146,8 @@
 
 <!--End of Cards--> 
 
-<img id="bioPic" src="./bioPic3.jpg"><!--TODO: Move this. -->
-<img src="./HashBlockie_forTheoBueno_SHA3-256.png" alt=""> <img src="./HashBlockie_forTheoB_SHA3-256.png" alt="">
+<img id="bioPic" src="../Image_Assets/bioPic2.jpg"><!--TODO: Move this. -->
+<img src="../Image_Assets/HashBlockie_TheoBueno_v.1.png" alt=""> <img src="../Image_Assets/HashBlockie_TheoB_v.1.png" alt="">
 
 <div>
   <h4>Hashes and Blockies</h4> <!--TODO: Rethink this area, at least make it a gallery of something. -->
@@ -122,5 +155,17 @@
 "2bacec212b7075dfe6be668bcc4c9d79341db4918c96369f6ba4da5bc969395a", but since telling that apart from the hashed output of say, just my first name and last initial, is rather more complex than it should be: "c2f6764630143493cedbc3edf98b4eb3bdf4e1e89d88bd811f68bd0874064cd4", we can use blockies, or simetrical small images composed of mostly colors forming shapes. Check out aboe: 
   <h4>Hashes and Blockies</h4>
   </p></div>
+
+
+<!--start of footer-->
+<footer class="page-footer">
+  <span>made by </span>
+  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+    <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+  </a>
+</footer>
+<!--end of footer-->
+
+  <script src="./bio_script.js"></script> <!-- our js TODO: maybe move to end of body -->   
 </body>
 </html>
