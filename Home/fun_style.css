@@ -1,0 +1,52 @@
+ /* Notes were added to easy any "future me" alterations*/
+ *,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif; /* good 'Internet' look in general */
+}
+
+body {
+	font: normal 16px/1.5 'Poppins', sans-serif; /* good 'Internet' look */
+	background-color: #187795;
+	background: #187795;
+
+}
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* GALLERY SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container p{
+  text-align: justify;
+  padding: 0;
+}
+
+.card-text{
+  text-align: justify;
+}
+
+.col-lg-3 {
+  padding: 0;
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
+

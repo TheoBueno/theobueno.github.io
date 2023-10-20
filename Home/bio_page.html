@@ -18,8 +18,7 @@
 
   <link rel="stylesheet" href="./bio_style.css"> <!-- our css --> 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
+
 </head>
 <body> 
 
@@ -39,8 +38,8 @@
         <a class="nav-link disabled" href="#">Lab's Door</a>
         <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
         <a class="nav-link active" href="./bio_page.html">Bio</a>
-        <a class="nav-link disabled" href="#">The Lab</a>
-        <a class="nav-link disabled" href="#">Created Assets</a>  
+        <a class="nav-link" href="./fun_bits.html">The Lab</a>
+        <a class="nav-link" href="./assets.html">Created Assets</a>  
         <a class="nav-link disabled" href="#">Contact</a>          
       </div>
     </div>
@@ -51,7 +50,14 @@
   
 <!-- <h1>Theo's Portfolio:</h1> -->
 
-
+<div class="container" id="welcome-video">
+  <p>Boa Noite! <br>
+     This is my Portfolio Intro Video.  Welcome to my Lab!</p>
+  <!-- <img height="300" src="../Image_Assets/bioPic1.png" alt=""> -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe width="1000" height="666" class="embed-responsive-item" src="https://youtube.com/embed/W3PL1rIbNa4" allowfullscreen></iframe>
+  </div>
+</div>
 
 <!--Accordion--> <!--TODO: EVERYTHING NEEDS A UPDATE HERE // more at https://getbootstrap.com/docs/5.2/components/accordion/-->   
 <div class="container horizontal-accordion">
@@ -59,47 +65,59 @@
   <div class="card choice unset bg-dark text-white mx-2" class="">
     <div class="card-body">
       <h5 class="card-title">About</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">Brazilian born. <br> NY Resident. <br> Full Stack Developer <br> Loving Husband. <br> D&D Afficionado </p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> <!-- Deal witht he buttons -->
+    </div>
+  </div>
+
+  <div class="card choice unset bg-dark text-white mx-2">
+    <div class="card-body">
+      <h5 class="card-title">Tools</h5>
+      <p class="card-text">I have been honing my skills with the tools most used in front-end development, next I'll expand my 
+                           experience and knowledge to add back end development tools to my belt. <br> 
+                           <b>CSS  |  HTML  |  JS  | Bootstrap  |  Git </b> <br><br><br> </p>
       <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
 
   <div class="card choice unset bg-dark text-white mx-2">
     <div class="card-body">
-      <h5 class="card-title">Card 2</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">Outdoors</h5>
+      <p class="card-text">I love both indoors activities and outdoors ones, I am a rock climber, though living in NY indoors
+                          climbing is the most common kind I get to do. Boldering has become a bit of a passion. I also love 
+                          boating, kayaking and nature hikes to new places. <br><br><br> </p>
       <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
 
   <div class="card choice unset bg-dark text-white mx-2">
     <div class="card-body">
-      <h5 class="card-title">Card 3</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
-    </div>
-  </div>
-
-  <div class="card choice unset bg-dark text-white mx-2">
-    <div class="card-body">
-      <h5 class="card-title">Card 4</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">Indoors</h5>
+      <p class="card-text">When it comes to indoors my favorite are tabletop role playing games and videogames, as well as the 
+                          "art of cooking". I enjoy joking around that while baking is science, cooking is an art, you can let
+                          your creative side shine and enjoy the flavor of madness. <br><br><br></p>
       <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
 
   <div class="card choice unset bg-dark text-white mx-2">
     <div class="card-body">
-      <h5 class="card-title">Card 5</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">Travel</h5>
+      <p class="card-text">While I enjoy both indoors and outdoors activities, nothing is as amazing an experience as traveling.
+                          <br>You can enjoy all the things you like, but also emmerse yourself in the culture shock of experiencing
+                          everything you know in new ways.  <br><br><br> </p>
       <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
 
   <div class="card choice unset bg-dark text-white mx-2">
     <div class="card-body">
-      <h5 class="card-title">Card 6</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">Contact</h5>
+      <p class="card-text"> Please feel free to reach out. <br>
+                            You can contact me by email, on linked-in or check my GitHub <br><br>
+                            <b><a href="mailto:theo.xdr@gmail.com">@</a> |
+                            <a href="https://www.linkedin.com/in/theobueno/">in</a> | <!--TODO: Change to Icons and Customize size and placement  -->
+                            <a href="https://github.com/TheoBueno">Git</a> </b> <br><br><br></p>  <!--TODO: Add and Alter Contact info  -->
       <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
     </div>
   </div>
@@ -108,34 +126,47 @@
 
 <!--Start of Cards-->  <!--TODO: Rethink this area. // more at https://getbootstrap.com/docs/5.3/components/cards/-->   
 
-<!-- <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> -->
-
 <div class="container"> <!--TODO: explore cars uses. -->
   <div class="row"> 
-    <div class="col-lg-6 mb-4"> 
+    <div class="col-lg-3 mb-3"> 
       <div class="card" style="width: 18rem;">
-        <img src="../Image_Assets/ADottaLisa.png" class="card-img-top" alt="...">
+        <img src="../Image_Assets/background_nature_Purple.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">My Passions</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div> 
-    <div class="col-lg-6 mb-4">          
+    
+    <div class="col-lg-3 mb-3"> 
       <div class="card" style="width: 18rem;">
         <img src="../Image_Assets/AMontagem_SP.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">My First Home</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div> 
+      </div> 
+    </div>
+
+    <div class="col-lg-3 mb-3"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Image_Assets/bioPic2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Family</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="col-lg-3 mb-3"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Image_Assets/bioPic3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Friends</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div> 
@@ -144,17 +175,26 @@
   </div>
 </div>
 
+
+
 <!--End of Cards--> 
 
-<img id="bioPic" src="../Image_Assets/bioPic2.jpg"><!--TODO: Move this. -->
-<img src="../Image_Assets/HashBlockie_TheoBueno_v.1.png" alt=""> <img src="../Image_Assets/HashBlockie_TheoB_v.1.png" alt="">
-
-<div>
-  <h4>Hashes and Blockies</h4> <!--TODO: Rethink this area, at least make it a gallery of something. -->
-  <p>Hash Blockie for my name under a SHA3-256 at 5 rounds comes out to:
-"2bacec212b7075dfe6be668bcc4c9d79341db4918c96369f6ba4da5bc969395a", but since telling that apart from the hashed output of say, just my first name and last initial, is rather more complex than it should be: "c2f6764630143493cedbc3edf98b4eb3bdf4e1e89d88bd811f68bd0874064cd4", we can use blockies, or simetrical small images composed of mostly colors forming shapes. Check out aboe: 
-  <h4>Hashes and Blockies</h4>
+<div class="container">
+  <img id="bioPic" src="../Image_Assets/bioPic1.png"><!--TODO: Move this. -->
+  
+  
+  <div class="floating-text">
+    <h4>FUN FACT: Hashes and Blockies</h4> <!--TODO: Rethink this area, at least make it a gallery of something. -->
+    <p>Hash Blockie for my name under a SHA3-256 at 5 rounds comes out to: <br><br>
+  "2bacec212b7075dfe6be668bcc4c9d79341db4918c96369f6ba4da5bc969395a" <br> But since telling that apart from the hashed output of say, just my first name and last initial, is rather more complex than it should be: <br><br> "c2f6764630143493cedbc3edf98b4eb3bdf4e1e89d88bd811f68bd0874064cd4" <br>Meanwhile we can use blockies - or simetrical small images composed of mostly colors forming shapes - instead. Check out. =>
+    
   </p></div>
+
+  <img src="../Image_Assets/HashBlockie_TheoBueno_v.1.png" alt=""> <img src="../Image_Assets/HashBlockie_TheoB_v.1.png" alt="">
+
+</div>
+
+
 
 
 <!--start of footer-->
@@ -165,7 +205,8 @@
   </a>
 </footer>
 <!--end of footer-->
-
-  <script src="./bio_script.js"></script> <!-- our js TODO: maybe move to end of body -->   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
+  <script src="./bio_script.js"></script> <!-- our JS library -->   
 </body>
 </html>

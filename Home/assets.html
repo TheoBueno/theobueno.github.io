@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Freelance Full Stack Developer">
+  <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theo's Coding Lab: Lab's Shelves</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">                                                   <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                          <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rokkitt&display=swap" 
+  rel="stylesheet">  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&family=Poppins&family=Droid+Sans:400,700" rel="stylesheet"/>                    <!-- Google fonts -->
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">          <!-- bootstrap CSS library --> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  <!-- bootstrap CSS library --> 
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">   <!-- bootstrap CSS library --> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
+
+  <link rel="stylesheet" href="./assets_style.css"> <!-- our css --> 
+</head>
+<body> 
+
+<!--Navigation bar-->
+<nav id="new-boot" class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
+      Theo's Coding Lab
+    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link disabled" href="#">Lab's Door</a>
+        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
+        <a class="nav-link" href="./bio_page.html">Bio</a>
+        <a class="nav-link" href="./fun_bits.html">The Lab</a>
+        <a class="nav-link active" href="./assets.html">Created Assets</a>  
+        <a class="nav-link disabled" href="#">Contact</a>          
+      </div>
+    </div>
+  </div>
+</nav>
+<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
+
+
+<!-- Gallery --> 
+<div class="container gallery-container">
+
+  <h1>My Gallery</h1>
+
+  <p class="page-description text-center">Let's take a look at the assets!</p>
+  
+  <div class="tz-gallery">
+
+      <div class="row">
+
+          <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="../Icons/EyeLogo2_v3.png">
+                  <img src="../Icons/EyeLogo2_v3.png" alt="Eye">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="../Icons/JoystickLogo_V5.png">
+                  <img src="../Icons/JoystickLogo_V5.png" alt="Joystick">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="../Icons/MapLogo1_v1.png">
+                  <img src="../Icons/MapLogo1_v1.png" alt="Mao">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <a class="lightbox" href="../Logo/Logo Theo - in Black Circle.png">
+                <img src="../Logo/Logo Theo - in Black Circle.png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="../Icons/HanoiLogo_v2.png">
+              <img src="../Icons/HanoiLogo_v2.png" alt="Map">
+            </a>
+
+            <a class="lightbox" href="../Icons/RotationLogo_V6.png">
+              <img src="../Icons/RotationLogo_V6.png" alt="Eye">
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-12">
+            <a class="lightbox" href="../Image_Assets/colourPallet.png">
+                <img src="../Image_Assets/colourPallet.png" alt="colourPallet">
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- End of Gallery --> 
+
+</body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20"></body>
+<!-- Attribution --> 
+
+  <!-- The scrollable area -->
+  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+
+    <div id="cont2" class="container">
+      <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#section1">Attributions</a></li>
+            <li><a href="#section2">Parallax</a></li>
+            <li><a href="#section3">Logo</a></li>
+            <li><a href="#section4">Exercise Icons</a></li>
+            <li><a href="#section5">Further Resources</a></li>
+            <!-- <li><a href="#section6">More</a></li> -->
+            
+          </ul>
+        </nav>
+        <div class="col-sm-9">
+          <div id="section1">
+            <h1>Image Source Attributions:</h1>
+            <p>Many of the images used are collected from free sources, but that doesn't mean we shoudn't give credit where it's owed! 
+              Please take a look bellow for their sources.</p>
+          </div>
+
+          <div id="section2">
+            <h1>Parallax Source Image</h1>
+            <p>I deconstructed the layers for the parallax from this initial picture:
+              Source Image by <a href="https://www.pexels.com/@aliona-pasha-1687920/">Aliona-Pasha, Pexels</a>
+            </p>
+          </div>
+
+          <div id="section3">
+            <h1>Logo Source Image</h1>
+            <p>My Logo choice was about searching for a good and versitile image that could be connected with an animal from where I'm from. 
+              My final choice was for the <i>Lobo-Guara</i>, also known as the Maned Wolf, is a unique canine, halfway point between a fox and 
+              a wolf from the Bralizian savannas and grasslands. The color pallet from this image matched some of the colorations from it's fur.
+              Logo Image by <a href="https://www.freepik.com/free-vector/gradient-colored-wolfpack-logo-template_20553561.htm#position=4">Freepik</a></p>
+          </div>
+
+          <div id="section4">
+            <h1>Exercise Icons</h1>
+            <p> Between the Joystick, the Eye, the Tower, the Map and the Geometric icons I went to Freepik again since they have a very good 
+              selection of simplified icons, logos and symbols. 
+              Icon Images by <a href="https://www.freepik.com/free-vector/hand-drawn-joystick-logo-collection-with-vintage-style_2386007.htm#page=3&query=pacman%20logo&position=30&from_view=search&track=ais">Freepik</a>
+            </p>
+          </div>
+
+          <div id="section5">
+            <h1>Further Resources</h1>
+            <p>While I have yet to implement them, I have downloaded a couple beautifulpictures from other source. Here's their page!
+              <br> Unused Photo 1 by <a href="https://unsplash.com/@noahangelo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Noah Angelo</a>, <a href="https://unsplash.com/photos/BNK525WM4BA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>      <br> Unused Photo 2 by <a href="https://unsplash.com/@kocreated?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Ko</a>, <a href="https://unsplash.com/photos/tjod6u2RpiU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> </p>
+
+            </p>
+          </div>
+
+          <!-- <div id="section6">
+            <h1>More</h1>
+            <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  
+    
+
+<!-- End of Attribution --> 
+<!--start of footer-->
+<footer class="page-footer">
+  <span>made by </span>
+  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+    <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+  </a>
+</footer>
+<!--end of footer-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>baguetteBox.run('.tz-gallery');</script>
+  <script src="./assets_script.js"></script> <!-- our js TODO: maybe move to end of body -->   
+</body>
+</html>

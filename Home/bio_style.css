@@ -25,17 +25,26 @@ h1 {
 	width: 200px;
 }
 
+#welcome-video {
+    align-self: center;
+    
+}
+
 /* ACCORDION SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
 .container{
     display: flex;
     width: 100%;
+    padding: 10px;
+}
+
+
+.container horizontal-accordion{
+    display: flex;
+    width: 100%;
     padding: 0;
-    /*  margin: 0;          */
-    /*  height: 100vh;      */
+     margin: 0;       /* margin-left: ;*/
+     height: 200px;     
 }
 
 .choice{
@@ -45,10 +54,19 @@ h1 {
     overflow: hidden;
     float: left;
     align-items: center;
-    transition: width 0.2s;
-    /*    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);        */
-    border-radius:0px;                                         /*Add to make corners round*/
+    transition: width 0.2s;   
+    border-radius:5px;                                         /*Add to make corners round, set 0 to make square*/
+    border-right: 1px solid;
+    border-right-color: #080808;    /*shadow effect on cards*/
+    border-bottom-color: #080808;   /*shadow effect on cards*/
+    box-shadow: 0 0 30px rgba(57, 58, 59, 0.6);   /*shadow effect on cards*/
 }
+
+.choice:not(:last-child) { /*customize all but last for in between effect*/ /*redundant for now*/
+    border-right: 1px solid;
+    border-right-color: #080808;
+}
+
 .expand{
     width: 65%;
 }
@@ -102,8 +120,25 @@ h1 {
     opacity: 1;
 }
 
-/* FINE TUNE SECTION
+/* CARDS SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.card{
+    box-shadow: 0 0 30px rgba(57, 58, 59, 0.6);   /*shadow effect on cards*/
+}
+
+.card img{
+    height: 450px;
+}
+
+/* GALLERY SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.floating-text {
+    padding-left: 10px ;
+    padding-right: 10px ;
+    text-align: justify;
+}
 
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

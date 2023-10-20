@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Freelance Full Stack Developer">
+  <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theo's Coding Lab: The Lab Itself</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">                                                   <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                          <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Rokkitt&display=swap" rel="stylesheet">  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet"/>                    <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">                     <!-- Google fonts -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  <!-- bootstrap CSS library --> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
+
+  <link rel="stylesheet" href="./fun_style.css"> <!-- our css --> 
+</head>
+<body> 
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
+      Theo's Coding Lab
+    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link disabled" href="#">Lab's Door</a>
+        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
+        <a class="nav-link" href="./bio_page.html">Bio</a>
+        <a class="nav-link active" href="./fun_bits.html">The Lab</a>
+        <a class="nav-link" href="./assets.html">Created Assets</a>  
+        <a class="nav-link disabled" href="#">Contact</a>          
+      </div>
+    </div>
+  </div>
+</nav>
+<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
+
+<!-- Card Gallery --> 
+<!--Start of Cards-->  <!--TODO: Rethink this area. // more at https://getbootstrap.com/docs/5.3/components/cards/-->   
+
+<div class="container"> <!--TODO: explore cars uses. -->
+  <div class="row"> 
+    <div class="col-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/EyeLogo2_v3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Eye</h5>
+          <p class="card-text">The challenge in this exercise was to get two eyes to "follow you around" by tracking the cursor. <br> 
+                              I appreciate how when you go to change tabs it rools itself at you.</p>
+          <a href="../Projects/Req.2_EyeFollow_Exe/index.html" class="btn btn-primary">Take a Look!</a>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="col-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/HanoiLogo_v2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tower of Hanoi</h5>
+          <p class="card-text">A familiar children's wooden - or plastic - toy is a scalable mathmatical puzzle based on a French math concept. <br>
+                              A number of disks pilled on top of one another, of decreasing sizes, that need to be moved</p>
+          <a href="../Projects/Hanoi_Towers/hanoi.html" class="btn btn-primary">Let's Solve It!</a>
+        </div> 
+      </div> 
+    </div>
+
+    <div class="col-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/JoystickLogo_V5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pacman</h5>
+          <p class="card-text">You know of him, you might even have played the game. <br> After so many appearances, including a few in Hollywood - if you've missed them, that's okay - they are now... <br> The Pack of Pacmen.</p>
+          <a href="../Projects/Req.1_PacMen_Exe/index.html" class="btn btn-primary">Packing Order</a>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="col-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/MapLogo1_v1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Live Tracking</h5>
+          <p class="card-text">This one Requires a personal API Key to implement. <br> I would share mine, but if it got overused I would be charged for it, so unfortunatly it's a little harder to experience. <br> Read <a href="https://github.com/TheoBueno/RealTime_BusTracker/blob/3e14b4762bd5ca655990464d14f96148c3ff5cf0/README.md">Me</a> for instructions!</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div> 
+      </div> 
+    </div>
+
+    <div class="col-lg-3 offset-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/GridLogo_V0.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dynamic Grid Creation</h5>
+          <p class="card-text">You can have grids set in stone using CSS and HTML, but with Java Script you can also dynamicaly create the divs, assign them values and push them into elements of the page!.</p>
+          <a href="../Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html" class="btn btn-primary">Daft Punk Lights!</a>
+        </div>
+      </div>
+    </div> 
+
+    <div class="col-lg-3 mb-4 sm-6 xs-12 xl-1"> 
+      <div class="card" style="width: 18rem;">
+        <img src="../Icons/RotationLogo_V6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Procedural Rotation</h5>
+          <p class="card-text">When you need to move values' location in their space coordinates without losing their order there's a few things that can be done. <br> By breaking the move into two we can now do three things!</p>
+          <a href="../Projects/Rotate_Exe/Rotate_90.html" class="btn btn-primary">Lovecrafting</a>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+</div>
+
+<!--End of Cards--> 
+<!-- End of Card Gallery --> 
+
+
+<!--start of footer-->
+<footer class="page-footer">
+  <span>made by </span>
+  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+    <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+  </a>
+</footer>
+<!--end of footer-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>      <!-- baguettebox JS library --> 
+  <script src="./fun_script.js"></script>                                                                     <!-- our js -->   
+</body>
+</html>
