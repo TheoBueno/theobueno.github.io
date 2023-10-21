@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Rokkitt&display=swap" rel="stylesheet"> <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet"/> <!-- Google fonts -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font-awesome icons // NOT WORKING-->
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- bootstrap CSS library --> 
@@ -23,39 +25,78 @@
 <body> 
 
 <!--Navigation bar-->
-<nav class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="https://theobueno.github.io/index.html">
       <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
       Theo's Coding Lab
-    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link disabled" href="#">Lab's Door</a>
-        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
-        <a class="nav-link active" href="./bio_page.html">Bio</a>
-        <a class="nav-link" href="./fun_bits.html">The Lab</a>
-        <a class="nav-link" href="./assets.html">Created Assets</a>  
-        <a class="nav-link disabled" href="#">Contact</a>          
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://theobueno.github.io/Home/bio_page.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/lifeline_page.html">Lifeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://theobueno.github.io/Home/fun_bits.html">The Lab</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lab's Door
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ EXERCISES:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/exe/index.html">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/exe/index.html">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/exe/index.html">The Eyes</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Hanoi_Towers/hanoi.html">Hanoi Towers</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html">Dynamic Grid</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Rotate_Exe/Rotate_90.html">Active Rotation</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ READMEs:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/">The Eyes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/assets.html">Created Assets</a>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="https://theobueno.github.io/Home/bio_page.html" target=""> <!-- TODO: Add a link to the Bio Page here -->
+          <img width="40" height="40" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+        </a>  
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
     </div>
   </div>
 </nav>
-<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
+<!--end of Navigation bar-->
 
   
-<!-- <h1>Theo's Portfolio:</h1> -->
-
+<!-- <h1>Theo's Portfolio Intro:</h1> -->
 <div class="container" id="welcome-video">
-  <p>Boa Noite! <br>
-     This is my Portfolio Intro Video.  Welcome to my Lab!</p>
-  <!-- <img height="300" src="../Image_Assets/bioPic1.png" alt=""> -->
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe width="1000" height="666" class="embed-responsive-item" src="https://youtube.com/embed/W3PL1rIbNa4" allowfullscreen></iframe>
+  <div class="row"> 
+    <div class="col-lg-3 mb-3 card-group"> 
+      <p>Boa Noite!  <br>
+        This is my Portfolio Intro Video.  <br>
+        Welcome to my Lab!</p>
+     <img height="250" src="../Logo/Logo Theo - in Black Circle (smaller).png" alt="">
+     <img height="250" src="../Logo/Logo Theo - in Light Circle.png" alt="">
+
+    </div> 
+    <div class="col-lg-8 mb-4 card-group"> 
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="850px" height="600px" class="embed-responsive-item" src="https://youtube.com/embed/W3PL1rIbNa4" allowfullscreen></iframe>
+      </div>
+    </div> 
   </div>
 </div>
 
@@ -66,7 +107,7 @@
     <div class="card-body">
       <h5 class="card-title">About</h5>
       <p class="card-text">Brazilian born. <br> NY Resident. <br> Full Stack Developer <br> Loving Husband. <br> D&D Afficionado </p>
-      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> <!-- Deal witht he buttons -->
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> Deal witht he buttons
     </div>
   </div>
 
@@ -76,7 +117,7 @@
       <p class="card-text">I have been honing my skills with the tools most used in front-end development, next I'll expand my 
                            experience and knowledge to add back end development tools to my belt. <br> 
                            <b>CSS  |  HTML  |  JS  | Bootstrap  |  Git </b> <br><br><br> </p>
-      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
+      <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> -->
     </div>
   </div>
 
@@ -86,7 +127,7 @@
       <p class="card-text">I love both indoors activities and outdoors ones, I am a rock climber, though living in NY indoors
                           climbing is the most common kind I get to do. Boldering has become a bit of a passion. I also love 
                           boating, kayaking and nature hikes to new places. <br><br><br> </p>
-      <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
+      <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> -->
     </div>
   </div>
 
@@ -96,7 +137,7 @@
       <p class="card-text">When it comes to indoors my favorite are tabletop role playing games and videogames, as well as the 
                           "art of cooking". I enjoy joking around that while baking is science, cooking is an art, you can let
                           your creative side shine and enjoy the flavor of madness. <br><br><br></p>
-      <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Button</button>
+      <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> -->
     </div>
   </div>
 
@@ -106,101 +147,117 @@
       <p class="card-text">While I enjoy both indoors and outdoors activities, nothing is as amazing an experience as traveling.
                           <br>You can enjoy all the things you like, but also emmerse yourself in the culture shock of experiencing
                           everything you know in new ways.  <br><br><br> </p>
-      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
+      <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> -->
     </div>
   </div>
 
-  <div class="card choice unset bg-dark text-white mx-2">
+  <div id="contacts" class="card choice unset bg-dark text-white mx-2">
     <div class="card-body">
-      <h5 class="card-title">Contact</h5>
-      <p class="card-text"> Please feel free to reach out. <br>
-                            You can contact me by email, on linked-in or check my GitHub <br><br>
-                            <b><a href="mailto:theo.xdr@gmail.com">@</a> |
-                            <a href="https://www.linkedin.com/in/theobueno/">in</a> | <!--TODO: Change to Icons and Customize size and placement  -->
-                            <a href="https://github.com/TheoBueno">Git</a> </b> <br><br><br></p>  <!--TODO: Add and Alter Contact info  -->
-      <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button>
+      <div class="accordion-content">
+        <h5 class="card-title">Contact</h5>
+        <p class="card-text"> 
+          Please feel free to reach out. <br>
+          You can contact me by email, link with me on linked-in, find me on Facebook or check my GitHub:
+        </p>
+      </div>
+      <div class="socials">      
+        <a id="in" href="https://www.linkedin.com/in/theobueno/" 
+        title="Link with me on LinkedIn!">
+        <i><b>In</b></i></a> 
+        <p><b>|</b></p>
+        <a id="git" href="https://github.com/TheoBueno" 
+        title="Check my GitHub!">
+        <i><b>Git</b></i></a> 
+        <p><b>|</b></p>
+        <a id="mail" href="mailto:theo.xdr@gmail.com" 
+        title="Shoot me an Email!">
+        <i><b>@</b></i></a>
+        <p><b>|</b></p>
+        <a id="fb" href="https://www.facebook.com/theo.bueno/" 
+        title="Find me on Facebook!">
+        <i><b>Fb</b></i></a> 
+        
+
+      </div>
+      <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Button</button> -->
     </div>
   </div>
 </div>
 <!--End of Accordion--> 
 
 <!--Start of Cards-->  <!--TODO: Rethink this area. // more at https://getbootstrap.com/docs/5.3/components/cards/-->   
-
 <div class="container"> <!--TODO: explore cars uses. -->
   <div class="row"> 
-    <div class="col-lg-3 mb-3"> 
-      <div class="card" style="width: 18rem;">
+    <div class="col-lg-3 mb-3 card-group"> 
+      <div class="card cards2" style="width: 18rem;">
         <img src="../Image_Assets/background_nature_Purple.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">My Passions</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Traveling. Cooking. Climbing. <br> I would love to be able to experience the world in as many ways as possible. <br> These are some of the ways I've found that allow me to perceive the many cultures of the world. be it a spice that only exists in Chile or to try a wine at the vine in Portugal. </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
     </div> 
     
-    <div class="col-lg-3 mb-3"> 
-      <div class="card" style="width: 18rem;">
+    <div class="col-lg-3 mb-3 card-group"> 
+      <div class="card cards2" style="width: 18rem;">
         <img src="../Image_Assets/AMontagem_SP.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">My First Home</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Sao Paulo, city of my heart. There's a lot to say about it but it would take too long. I would simplify it by describing it as a city that is frenetic and lively. There's always something to do, a place to spend time with friends. If Buenos Aires is like Paris, Sao Paulo is the New York of South America..</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div> 
       </div> 
     </div>
 
-    <div class="col-lg-3 mb-3"> 
-      <div class="card" style="width: 18rem;">
+    <div class="col-lg-3 mb-3 card-group"> 
+      <div class="card cards2" style="width: 18rem;">
         <img src="../Image_Assets/bioPic2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Family</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">As an expatriate, who moved continents, family is a treasure that I value a lot, and miss a lot too.  <br><br>Richard Bach put it best: <br> "The bond that links your true family is not one of blood, but of respect and joy in each other's life."</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
     </div> 
 
 
-    <div class="col-lg-3 mb-3"> 
-      <div class="card" style="width: 18rem;">
+    <div class="col-lg-3 mb-3 card-group"> 
+      <div class="card cards2" style="width: 18rem;">
         <img src="../Image_Assets/bioPic3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Friends</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Friends are the family you chose. To quote Maya Angelou: "Most people really don't become friends. <br> 
+          They become deep and serious acquaintances. <br>
+          But in a friendship you get to know the spirit of the other. <br>
+          And your values coincide." 
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div> 
       </div> 
     </div>
   </div>
 </div>
-
-
-
 <!--End of Cards--> 
 
-<div class="container">
+<!--Fun Fact--> 
+<div class="container fun-fact">
   <img id="bioPic" src="../Image_Assets/bioPic1.png"><!--TODO: Move this. -->
-  
-  
   <div class="floating-text">
     <h4>FUN FACT: Hashes and Blockies</h4> <!--TODO: Rethink this area, at least make it a gallery of something. -->
     <p>Hash Blockie for my name under a SHA3-256 at 5 rounds comes out to: <br><br>
-  "2bacec212b7075dfe6be668bcc4c9d79341db4918c96369f6ba4da5bc969395a" <br> But since telling that apart from the hashed output of say, just my first name and last initial, is rather more complex than it should be: <br><br> "c2f6764630143493cedbc3edf98b4eb3bdf4e1e89d88bd811f68bd0874064cd4" <br>Meanwhile we can use blockies - or simetrical small images composed of mostly colors forming shapes - instead. Check out. =>
-    
+  <i>"2bacec212b7075dfe6be668bcc4c9d79341db4918c96369f6ba4da5bc969395a"</i> <br> But since telling that apart from the hashed output of say, just my first name and last initial, is rather more complex than it should be: <br><br> <i>"c2f6764630143493cedbc3edf98b4eb3bdf4e1e89d88bd811f68bd0874064cd4"</i> <br>Meanwhile we can use blockies - or simetrical small images composed of mostly colors forming shapes - instead. Check out. =>
   </p></div>
-
   <img src="../Image_Assets/HashBlockie_TheoBueno_v.1.png" alt=""> <img src="../Image_Assets/HashBlockie_TheoB_v.1.png" alt="">
-
 </div>
-
+<!--End of Fun Fact--> 
 
 
 
 <!--start of footer-->
 <footer class="page-footer">
   <span>made by </span>
-  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+  <a href="#contacts" target=""> 
     <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
   </a>
 </footer>

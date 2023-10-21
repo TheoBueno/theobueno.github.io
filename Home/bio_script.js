@@ -25,3 +25,6 @@ choiceArray.forEach((card) => {
         card.classList.add('expand') /* Can switch toogle for add */
     });
 });
+
+// const contacts = document.querySelectorAll("#contacts")
+// contacts.classList.add('expand')

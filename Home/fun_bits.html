@@ -6,7 +6,7 @@
   <meta name="description" content="Freelance Full Stack Developer">
   <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theo's Coding Lab: The Lab Itself</title>
+  <title>The Lab Itself - Theo's Coding Lab</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">                                                   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                          <!-- Google fonts -->
@@ -23,31 +23,61 @@
   <link rel="stylesheet" href="./fun_style.css"> <!-- our css --> 
 </head>
 <body> 
-
 <!--Navigation bar-->
-<nav class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="https://theobueno.github.io/index.html">
       <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
       Theo's Coding Lab
-    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link disabled" href="#">Lab's Door</a>
-        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
-        <a class="nav-link" href="./bio_page.html">Bio</a>
-        <a class="nav-link active" href="./fun_bits.html">The Lab</a>
-        <a class="nav-link" href="./assets.html">Created Assets</a>  
-        <a class="nav-link disabled" href="#">Contact</a>          
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/bio_page.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/lifeline_page.html">Lifeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://theobueno.github.io/Home/fun_bits.html">The Lab</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lab's Door
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ EXERCISES:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/exe/index.html">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/exe/index.html">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/exe/index.html">The Eyes</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Hanoi_Towers/hanoi.html">Hanoi Towers</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html">Dynamic Grid</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Rotate_Exe/Rotate_90.html">Active Rotation</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ READMEs:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/">The Eyes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/assets.html">Created Assets</a>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="https://theobueno.github.io/Home/bio_page.html" target=""> 
+          <img width="40" height="40" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+        </a>  
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
     </div>
   </div>
 </nav>
-<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
+<!--end of Navigation bar-->
 
 <!-- Card Gallery --> 
 <!--Start of Cards-->  <!--TODO: Rethink this area. // more at https://getbootstrap.com/docs/5.3/components/cards/-->   
@@ -61,7 +91,7 @@
           <h5 class="card-title">The Eye</h5>
           <p class="card-text">The challenge in this exercise was to get two eyes to "follow you around" by tracking the cursor. <br> 
                               I appreciate how when you go to change tabs it rools itself at you.</p>
-          <a href="../Projects/Req.2_EyeFollow_Exe/index.html" class="btn btn-primary">Take a Look!</a>
+          <a href="../Projects/Req.2_EyeFollow_Exe/index.html" title="Eye Exercise" class="btn btn-primary">Take a Look!</a>
         </div>
       </div>
     </div> 
@@ -73,7 +103,7 @@
           <h5 class="card-title">Tower of Hanoi</h5>
           <p class="card-text">A familiar children's wooden - or plastic - toy is a scalable mathmatical puzzle based on a French math concept. <br>
                               A number of disks pilled on top of one another, of decreasing sizes, that need to be moved</p>
-          <a href="../Projects/Hanoi_Towers/hanoi.html" class="btn btn-primary">Let's Solve It!</a>
+          <a href="../Projects/Hanoi_Towers/hanoi.html" title="Hanoi Tower's Exercise" class="btn btn-primary">Let's Solve It!</a>
         </div> 
       </div> 
     </div>
@@ -84,7 +114,7 @@
         <div class="card-body">
           <h5 class="card-title">Pacman</h5>
           <p class="card-text">You know of him, you might even have played the game. <br> After so many appearances, including a few in Hollywood - if you've missed them, that's okay - they are now... <br> The Pack of Pacmen.</p>
-          <a href="../Projects/Req.1_PacMen_Exe/index.html" class="btn btn-primary">Packing Order</a>
+          <a href="../Projects/Req.1_PacMen_Exe/index.html" title="Pacman Exercise" class="btn btn-primary">Packing Order</a>
         </div>
       </div>
     </div> 
@@ -96,7 +126,7 @@
         <div class="card-body">
           <h5 class="card-title">Live Tracking</h5>
           <p class="card-text">This one Requires a personal API Key to implement. <br> I would share mine, but if it got overused I would be charged for it, so unfortunatly it's a little harder to experience. <br> Read <a href="https://github.com/TheoBueno/RealTime_BusTracker/blob/3e14b4762bd5ca655990464d14f96148c3ff5cf0/README.md">Me</a> for instructions!</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="https://theobueno.github.io/live-tracker/exe/index.html" title="Live Tracking Exercise - Must Add Own Key to Code!" class="btn btn-primary">Go somewhere</a>
         </div> 
       </div> 
     </div>
@@ -107,7 +137,7 @@
         <div class="card-body">
           <h5 class="card-title">Dynamic Grid Creation</h5>
           <p class="card-text">You can have grids set in stone using CSS and HTML, but with Java Script you can also dynamicaly create the divs, assign them values and push them into elements of the page!.</p>
-          <a href="../Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html" class="btn btn-primary">Daft Punk Lights!</a>
+          <a href="../Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html" title="Dynamic Grid Exercise" class="btn btn-primary">Daft Punk Lights!</a>
         </div>
       </div>
     </div> 
@@ -118,7 +148,7 @@
         <div class="card-body">
           <h5 class="card-title">Procedural Rotation</h5>
           <p class="card-text">When you need to move values' location in their space coordinates without losing their order there's a few things that can be done. <br> By breaking the move into two we can now do three things!</p>
-          <a href="../Projects/Rotate_Exe/Rotate_90.html" class="btn btn-primary">Lovecrafting</a>
+          <a href="../Projects/Rotate_Exe/Rotate_90.html" title="Rotation Exercise" class="btn btn-primary">Lovecrafting</a>
         </div>
       </div>
     </div> 
@@ -133,13 +163,13 @@
 <!--start of footer-->
 <footer class="page-footer">
   <span>made by </span>
-  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+  <a href="https://theobueno.github.io/Home/bio_page.html" target="">
     <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
   </a>
 </footer>
 <!--end of footer-->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>      <!-- baguettebox JS library --> 
-  <script src="./fun_script.js"></script>                                                                     <!-- our js -->   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>  <!-- baguettebox JS library --> 
+<script src="./fun_script.js"></script>  <!-- our js -->   
 </body>
 </html>

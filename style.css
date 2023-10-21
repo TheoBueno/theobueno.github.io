@@ -45,7 +45,7 @@ nav { /* 'nav bar' configurations */
   left: 50%;
   font-size: 100px;
   transform: translate(-50%, -30%); /* correction for true center; a little up from center /left/top/ instead of starting leftmost margin on center*/ 
-  z-index: 2;
+  z-index: 2; 
 
 }
 

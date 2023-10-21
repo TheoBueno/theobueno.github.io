@@ -6,7 +6,7 @@
   <meta name="description" content="Freelance Full Stack Developer">
   <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theo's Coding Lab: The Lifeline</title>
+  <title>The Lifeline - Theo's Coding Lab</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Google fonts -->
@@ -24,31 +24,60 @@
 <body>
  
 <!--Navigation bar-->
-<nav class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="https://theobueno.github.io/index.html">
       <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
       Theo's Coding Lab
-    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link disabled" href="#">Lab's Door</a>
-        <a class="nav-link active" aria-current="page" href="./lifeline_page.html">Lifeline</a>
-        <a class="nav-link" href="./bio_page.html">Bio</a>
-        <a class="nav-link" href="./fun_bits.html">The Lab</a>
-        <a class="nav-link" href="./assets.html">Created Assets</a>  
-        <a class="nav-link disabled" href="#">Contact</a>          
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/bio_page.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://theobueno.github.io/Home/lifeline_page.html">Lifeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://theobueno.github.io/Home/fun_bits.html">The Lab</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lab's Door
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ EXERCISES:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/exe/index.html">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/exe/index.html">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/exe/index.html">The Eyes</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Hanoi_Towers/hanoi.html">Hanoi Towers</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html">Dynamic Grid</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Rotate_Exe/Rotate_90.html">Active Rotation</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ READMEs:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/">The Eyes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/assets.html">Created Assets</a>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="https://theobueno.github.io/Home/bio_page.html" target=""> <!-- TODO: Add a link to the Bio Page here -->
+          <img width="40" height="40" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+        </a>  
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
     </div>
   </div>
 </nav>
-<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
-
-
+<!--end of Navigation bar-->
 <!--start of content-->
 
 <section class="intro">
@@ -140,10 +169,20 @@
 </section>
 <!--end of timeline-->
 
+<section class="sect-end">
+  <div class="div-end">
+    <p class="p-end">
+      More about me: 
+        <a href="./bio_page.html">
+        <img id="wolf-logo" width="100" height="100" src="../Logo - Just Wolves.png" alt="LOGO"></a>
+    </p>
+  </div>
+</section>
+
 <!--start of footer-->
 <footer class="page-footer">
   <span>made by </span>
-  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+  <a href="./bio_page.html" target=""> <!-- TODO: Add a link to the Bio Page here -->
     <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
   </a>
 </footer>

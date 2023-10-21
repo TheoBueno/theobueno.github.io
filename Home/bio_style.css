@@ -115,20 +115,70 @@ h1 {
 .unset > div > p{ 
     opacity: 0;         /*opacity of text inside Acc Cards -> when all are closed*/
 }
+
+.unset > div > div > p{ 
+    opacity: 0;         /*opacity of text inside Acc Cards -> when all are closed*/
+}
+
+.unset > div > div > a{ 
+    opacity: 0;         /*opacity of text inside Acc Cards -> when all are closed*/
+}
+
 .expand > div {
     transition-delay: 200ms;
     opacity: 1;
 }
 
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 20px;
+    padding-left: 20%;
+}
+
+#in:hover{
+	color: #187795;
+    transform: translateY(-3px);
+}
+
+#git:hover{
+	color: #ccc;
+    transform: translateY(-3px);
+}
+
+#mail:hover{
+	color: #DE6C3F;
+    transform: translateY(-3px);
+}
+
+#fb:hover{
+	color: #CAD49D;
+    transform: translateY(-3px);
+}
+
+
 /* CARDS SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.card{
+.cards2 {
     box-shadow: 0 0 30px rgba(57, 58, 59, 0.6);   /*shadow effect on cards*/
+    height: 750px;
+    width: 3000px;
+    padding: 3px;
 }
 
-.card img{
+.cards2-group { 
+    padding: 30px;
+}
+
+.cards2 img {
     height: 450px;
+    padding: 1%;
+}
+
+.container p {
+    text-align: justify;
 }
 
 /* GALLERY SECTION
@@ -138,6 +188,16 @@ h1 {
     padding-left: 10px ;
     padding-right: 10px ;
     text-align: justify;
+
+}
+
+.fun-fact {
+    background-color: #2e294e;
+    color: #CAD49D ;
+    /* color: #DE6C3F; */
+    
+    border-radius: 25px;
+
 }
 
 /* FOOTER STYLES

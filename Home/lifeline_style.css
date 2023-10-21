@@ -184,6 +184,29 @@ time {  /* The Titles each Item in the Timeline */
   }
 }
 
+/* BOTTOM LINK STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sect-end {
+  width: 100%;
+}
+
+.div-end {
+ padding: 20px;
+ border: 1px;
+
+}
+
+.p-end {
+ border: 20px;
+ text-align: center;
+ border: black;
+}
+
+#wolf-logo:hover {
+  transform: translateY(-3px);
+}
+
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {

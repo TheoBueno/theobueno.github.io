@@ -13,30 +13,6 @@ body {
 	overflow-x: hidden;
 	padding-bottom: 50px;
 }
-
-/* NAVBAR SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#new-boot{
-  display: flex;
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 15px !important;
-  letter-spacing: 1px !important;
-  font-stretch: extra-expanded !important;
-  padding-left: 10px;
-}
-
-.navbar-brand{
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 20px !important;
-  letter-spacing: 1px !important;
-  font-stretch: extra-expanded !important;
-  padding-left: 6px;
-  padding-top: 6px;
-  text-align: center;
-}
-
 /* GALLERY SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -128,7 +104,6 @@ body {
   }
 }
 
-
 body {
   background-color: #187795;
 }
@@ -195,3 +170,28 @@ body {
   margin-left: 4px;
 }
 
+/* NAVBAR SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#new-boot{
+  display: flex;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px !important;
+  letter-spacing: 1px !important;
+  font-stretch: extra-expanded !important;
+  padding-left: 10px;
+}
+
+.navbar-brand{
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 20px !important;
+  letter-spacing: 1px !important;
+  font-stretch: extra-expanded !important;
+  padding-left: 12px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.navbar {
+  border-radius: 0%;
+}

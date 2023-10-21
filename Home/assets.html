@@ -25,32 +25,61 @@
   <link rel="stylesheet" href="./assets_style.css"> <!-- our css --> 
 </head>
 <body> 
-
 <!--Navigation bar-->
-<nav id="new-boot" class="navbar navbar-expand-lg bg-light" >  <!-- navbar-dark bg-dark to change color to dark theme -->
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="https://theobueno.github.io/index.html">
       <img src="../Logo/Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
       Theo's Coding Lab
-    </a> <!--TODO: EVERYTHING NEEDS A LINK HERE --> 
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link disabled" href="#">Lab's Door</a>
-        <a class="nav-link" aria-current="page" href="./lifeline_page.html">Lifeline</a>
-        <a class="nav-link" href="./bio_page.html">Bio</a>
-        <a class="nav-link" href="./fun_bits.html">The Lab</a>
-        <a class="nav-link active" href="./assets.html">Created Assets</a>  
-        <a class="nav-link disabled" href="#">Contact</a>          
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/bio_page.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/lifeline_page.html">Lifeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://theobueno.github.io/Home/fun_bits.html">The Lab</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lab's Door
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ EXERCISES:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/exe/index.html">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/exe/index.html">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/exe/index.html">The Eyes</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Hanoi_Towers/hanoi.html">Hanoi Towers</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html">Dynamic Grid</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Rotate_Exe/Rotate_90.html">Active Rotation</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ READMEs:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/">The Eyes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://theobueno.github.io/Home/assets.html">Created Assets</a>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="https://theobueno.github.io/Home/bio_page.html" target=""> 
+          <img width="40" height="40" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+        </a>  
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
     </div>
   </div>
 </nav>
-<!--end of Navigation bar-->   <!-- TODO: update for more content like dropdown at: https://getbootstrap.com/docs/5.2/components/navbar/-->
-
+<!--end of Navigation bar-->
 
 <!-- Gallery --> 
 <div class="container gallery-container">
@@ -107,76 +136,72 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20"></body>
 <!-- Attribution --> 
 
-  <!-- The scrollable area -->
-  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
-
-    <div id="cont2" class="container">
-      <div class="row">
-        <nav class="col-sm-3" id="myScrollspy">
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#section1">Attributions</a></li>
-            <li><a href="#section2">Parallax</a></li>
-            <li><a href="#section3">Logo</a></li>
-            <li><a href="#section4">Exercise Icons</a></li>
-            <li><a href="#section5">Further Resources</a></li>
-            <!-- <li><a href="#section6">More</a></li> -->
-            
-          </ul>
-        </nav>
-        <div class="col-sm-9">
-          <div id="section1">
-            <h1>Image Source Attributions:</h1>
-            <p>Many of the images used are collected from free sources, but that doesn't mean we shoudn't give credit where it's owed! 
-              Please take a look bellow for their sources.</p>
-          </div>
-
-          <div id="section2">
-            <h1>Parallax Source Image</h1>
-            <p>I deconstructed the layers for the parallax from this initial picture:
-              Source Image by <a href="https://www.pexels.com/@aliona-pasha-1687920/">Aliona-Pasha, Pexels</a>
-            </p>
-          </div>
-
-          <div id="section3">
-            <h1>Logo Source Image</h1>
-            <p>My Logo choice was about searching for a good and versitile image that could be connected with an animal from where I'm from. 
-              My final choice was for the <i>Lobo-Guara</i>, also known as the Maned Wolf, is a unique canine, halfway point between a fox and 
-              a wolf from the Bralizian savannas and grasslands. The color pallet from this image matched some of the colorations from it's fur.
-              Logo Image by <a href="https://www.freepik.com/free-vector/gradient-colored-wolfpack-logo-template_20553561.htm#position=4">Freepik</a></p>
-          </div>
-
-          <div id="section4">
-            <h1>Exercise Icons</h1>
-            <p> Between the Joystick, the Eye, the Tower, the Map and the Geometric icons I went to Freepik again since they have a very good 
-              selection of simplified icons, logos and symbols. 
-              Icon Images by <a href="https://www.freepik.com/free-vector/hand-drawn-joystick-logo-collection-with-vintage-style_2386007.htm#page=3&query=pacman%20logo&position=30&from_view=search&track=ais">Freepik</a>
-            </p>
-          </div>
-
-          <div id="section5">
-            <h1>Further Resources</h1>
-            <p>While I have yet to implement them, I have downloaded a couple beautifulpictures from other source. Here's their page!
-              <br> Unused Photo 1 by <a href="https://unsplash.com/@noahangelo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Noah Angelo</a>, <a href="https://unsplash.com/photos/BNK525WM4BA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>      <br> Unused Photo 2 by <a href="https://unsplash.com/@kocreated?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Ko</a>, <a href="https://unsplash.com/photos/tjod6u2RpiU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> </p>
-
-            </p>
-          </div>
-
-          <!-- <div id="section6">
-            <h1>More</h1>
-            <p>Try to scroll this page and look at the navigation list while scrolling!</p>
-          </div> -->
-
-        </div>
+<!-- The scrollable area -->
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+<div id="cont2" class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#section1">Attributions</a></li>
+        <li><a href="#section2">Parallax</a></li>
+        <li><a href="#section3">Logo</a></li>
+        <li><a href="#section4">Exercise Icons</a></li>
+        <li><a href="#section5">Further Resources</a></li>
+        <!-- <li><a href="#section6">More</a></li> -->
+        
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">
+        <h1>Image Source Attributions:</h1>
+        <p>Many of the images used are collected from free sources, but that doesn't mean we shoudn't give credit where it's owed! 
+          Please take a look bellow for their sources.</p>
       </div>
-    </div>
-  
-    
 
+      <div id="section2">
+        <h1>Parallax Source Image</h1>
+        <p>I deconstructed the layers for the parallax from this initial picture:
+          Source Image by <a href="https://www.pexels.com/@aliona-pasha-1687920/">Aliona-Pasha, Pexels</a>
+        </p>
+      </div>
+
+      <div id="section3">
+        <h1>Logo Source Image</h1>
+        <p>My Logo choice was about searching for a good and versitile image that could be connected with an animal from where I'm from. 
+          My final choice was for the <i>Lobo-Guara</i>, also known as the Maned Wolf, is a unique canine, halfway point between a fox and 
+          a wolf from the Bralizian savannas and grasslands. The color pallet from this image matched some of the colorations from it's fur.
+          Logo Image by <a href="https://www.freepik.com/free-vector/gradient-colored-wolfpack-logo-template_20553561.htm#position=4">Freepik</a></p>
+      </div>
+
+      <div id="section4">
+        <h1>Exercise Icons</h1>
+        <p> Between the Joystick, the Eye, the Tower, the Map and the Geometric icons I went to Freepik again since they have a very good 
+          selection of simplified icons, logos and symbols. 
+          Icon Images by <a href="https://www.freepik.com/free-vector/hand-drawn-joystick-logo-collection-with-vintage-style_2386007.htm#page=3&query=pacman%20logo&position=30&from_view=search&track=ais">Freepik</a>
+        </p>
+      </div>
+
+      <div id="section5">
+        <h1>Further Resources</h1>
+        <p>While I have yet to implement them, I have downloaded a couple beautifulpictures from other source. Here's their page!
+          <br> Unused Photo 1 by <a href="https://unsplash.com/@noahangelo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Noah Angelo</a>, <a href="https://unsplash.com/photos/BNK525WM4BA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>      <br> Unused Photo 2 by <a href="https://unsplash.com/@kocreated?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Ko</a>, <a href="https://unsplash.com/photos/tjod6u2RpiU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> </p>
+
+        </p>
+      </div>
+
+      <!-- <div id="section6">
+        <h1>More</h1>
+        <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+      </div> -->
+
+    </div>
+  </div>
+</div>
 <!-- End of Attribution --> 
 <!--start of footer-->
 <footer class="page-footer">
   <span>made by </span>
-  <a href="" target=""> <!-- TODO: Add a link to the Bio Page here -->
+  <a href="https://theobueno.github.io/Home/bio_page.html" target="">
     <img width="24" height="24" src="../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
   </a>
 </footer>
@@ -184,7 +209,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-  <script>baguetteBox.run('.tz-gallery');</script>
-  <script src="./assets_script.js"></script> <!-- our js TODO: maybe move to end of body -->   
+  <script>baguetteBox.run('.tz-gallery');</script> <!-- baguettebox JS library --> 
+  <script src="./assets_script.js"></script> <!-- our js -->   
 </body>
 </html>
