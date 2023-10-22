@@ -1,0 +1,111 @@
+* { /*Removes pre-existing configurations*/
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* color: #fff; */
+font-family: "Poppins", sans-serif; /* good 'Internet' look in general */
+}
+* { /*Removes pre-existing configurations*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+/* color: #fff; */
+font-family: "Poppins", sans-serif; /* good 'Internet' look in general */
+}
+body {
+  background: #187795;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(1, 60px);
+  grid-gap: 10px;
+}
+
+/* NAVBAR STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar{
+  padding: 0;
+}
+
+/* PERMUTE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.grid {
+  margin: 5px;
+  margin-left: 50%;
+  transform: translate(-15%);
+}
+
+.intro {
+  margin-left: 50%;
+  transform: translate(-15%);
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  text-align: middle;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  width: 60px;
+  height: 60px;
+}
+
+.button {
+  padding: 3px;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 1.5px;
+  border-radius: 6px;
+}
+.TD {
+  margin-left: 50%;
+  margin-top: 10px;
+  transform: translate(-50%);
+  background-color: #444;
+  width: 350px;
+  border-radius: 6px;
+  padding: 5px;
+
+}
+
+#todo {
+  font-size: 1.1em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+#title {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: rgb(62, 39, 162);
+}
+
+
+
+  /* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background: rgba(255, 255, 255, 0.65);
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}

@@ -2,50 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Freelance Full Stack Developer">
+  <meta name="keywords" content="freelancer, front-end web developer, full stack developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotate Square Matrix 90°</title>
-  <style>
-    .grid {
-      display: grid;
-      padding-top: 10px;
-      grid-template-columns: repeat(5, 80px);
-      grid-template-rows: repeat(5, 80px);
-      grid-gap: 15px;
-    }
-    div{
-        padding: 10px;
-        text-align: center;
-        border-style: solid;
-        font-size: 1em;
-    }
-    .box {
-      background-color: #619465;
-      color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      font-size: 150%;
-    }
-    .button {
-      font-size: 1.5em;
-    }
-    div:nth-child(even) {
-    background-color: rgb(116, 127, 142);
-    }
+  <title>Doing Flips - The Lab's Shelves</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">                                                   <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                          <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rokkitt&display=swap" 
+  rel="stylesheet">  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&family=Poppins&family=Droid+Sans:400,700" rel="stylesheet"/>  <!-- Google fonts -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  <!-- bootstrap CSS library --> 
 
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- bootstrap JS library --> 
+
+  <link rel="stylesheet" href="./Rotate_90_style.css"> <!-- our css --> 
 </head>
 <body>
-<script src="./Rotate_90.js"></script>
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://theobueno.github.io/index.html">
+      <img src="../../Logo - Just Wolves.png" alt="Lobo-Guara Logo" width="35" height="35" class="d-inline-block align-text-center">
+      Theo's Coding Lab
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/bio_page.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/lifeline_page.html">Lifeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://theobueno.github.io/Home/fun_bits.html">The Lab</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lab's Door
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ EXERCISES:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/exe/index.html">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/exe/index.html">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/exe/index.html">The Eyes</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Hanoi_Towers/hanoi.html">Hanoi Towers</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Dynamic_Grid_Exe/Grid_Dyn_CreateGrid.html">Dynamic Grid</a></li>
+            <li><a class="dropdown-item active" href="https://theobueno.github.io/Projects/Rotate_Exe/Rotate_90.html">Active Rotation</a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/Projects/Permute_Exe/permute.html">Permutations</a></li> 
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item disabled" href="#"><h5>‣ READMEs:</h5></a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/pacman/">The Pacmen </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/live-tracker/">Live Tracking </a></li>
+            <li><a class="dropdown-item" href="https://theobueno.github.io/eyes/">The Eyes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://theobueno.github.io/Home/assets.html">Created Assets</a>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="https://theobueno.github.io/Home/bio_page.html" target=""> <!-- TODO: Add a link to the Bio Page here -->
+          <img width="40" height="40" src="../../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+        </a>  
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+    </div>
+  </div>
+</nav>
+<!--end of Navigation bar-->
 
-<!-- <button class="button" onclick="createGrid(A)">New Grid!</button> -->
-<button class="button" onclick='diagonalFlip(A)'>Diagonal Flip!</button>
-<button class="button" onclick='horizontalFlip(A)'>Horizontal Flip!</button>
-<!-- <button class="button" onclick="updateGraphics(A)">Update Graphics!</button> -->
+<!--Exercise-->  
+
+<div class="controls">
+  <button class="buttons" onclick='diagonalFlip(A)'>Diagonal Flip!</button>
+  <button class="buttons" onclick='horizontalFlip(A)'>Horizontal Flip!</button> 
+</div>
 
 <main id="grid" class="grid">
-
 </main>
 
+<script src="./Rotate_90.js"></script>
 <script>
 var grid = document.getElementById(grid)
 function createGrid(A) {
@@ -53,11 +98,11 @@ function createGrid(A) {
   for (let row = 0; row < L; row++) {
     for (let col = 0; col < L; col++) {
       
-      let div = document.createElement('div')   
-      div.id = `box ${row}_${col}`
-      div.innerHTML = `${A[row][col]}`
-      div.className = `box ${div.innerHTML}`
-      document.getElementById('grid').appendChild(div)
+      let divs = document.createElement('divs')   
+      divs.id = `box ${row}_${col}`
+      divs.innerHTML = `${A[row][col]}`
+      divs.className = `box ${divs.innerHTML}`
+      document.getElementById('grid').appendChild(divs)
     }
   }
 }
@@ -83,8 +128,16 @@ function horizontalFlip(A) {
   exchangeCols(A)
   updateGraphics(A)
 }
-
 </script>
+<!--end of Exercise-->
 
+<!--start of footer-->
+<footer class="page-footer">
+  <span>made by </span>
+  <a href="https://theobueno.github.io/Home/bio_page.html" target=""> <!-- TODO: Add a link to the projects Page here -->
+    <img width="24" height="24" src="../../Logo/Logo Pure - Dark.png" alt="Lobo-Guara Dark-Circle logo">
+  </a>
+</footer>
+<!--end of footer-->
 </body>
 </html>
